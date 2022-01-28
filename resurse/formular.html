@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Policlinica Privata</title>
+        <link href="css-form-part.css" rel="stylesheet" type="text/css" />
+        <link href="css-form-part2.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        
+        <header>
+            <input type="checkbox">
+            <div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>    
+            <nav>
+                <ul class="meniu">
+                    <li><a href="index.html">Acasa</a></li>
+                    <li><a href="index2.html" target="_blank">Medici</a></li>
+                    <li><a href="index3.html" target="_blank">Specialitati</a>
+                            <ul class="submeniu">
+                                <li><a href="index3.html#cardiologie" target="_blank">Cardiologie</a></li>
+                                <li><a href="index3.html#chirurgie" target="_blank">Chirurgie</a></li>
+                                <li><a href="index3.html#endocrinologie" target="_blank">Endocrinologie</a></li>
+                                <li><a href="index3.html#hematologie" target="_blank">Hematologie</a></li>
+                                <li><a href="index3.html#neurologie" target="_blank">Neurologie</a></li>
+                                <li><a href="index3.html#oftalmologie" target="_blank">Oftalmologie</a></li>
+                                <li><a href="index3.html#psihologie" target="_blank">Psihologie</a></li>
+                                <li><a href="index3.html#radiologie" target="_blank">Radiologie</a></li>
+                             
+                            </ul></li>
+                    <li><a href="index.html#preturi"  target="_blank">Preturi</a>
+                        <ul class="submeniu">
+                            <li><a href="index.html#analize"  target="_blank">Analize</a></li>
+                            <li><a href="index.html#imagistica"  target="_blank">Imagistica</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="index.html#program"  target="_blank">Program</a></li>	
+                    <li><a href="index.html#contact"  target="_blank">Contact</a>
+                        <ul class="submeniu">
+                            <li><a href="index.html#telefon"  target="_blank">Telefon</a></li>
+                            <li><a href="index.html#email"  target="_blank">E-mail</a></li>
+                            <li><a href="index.html#locatie"  target="_blank">Locatie</a></li>
+                        </ul>
+                    </li>	
+                    <li><a href="index.html#galerie"  target="_blank">Galerie</a></li>
+                    <li><a href="formular.html">Programare</a></li>
+                    <li><a href="login"  target="_blank">Autentificare</a></li>
+                 </ul>
+            </nav>
+            <img src="image12.jpg" alt = "Imagine indisponibila">
+            <h1><span id="titlu">Policlinica Privata</span><a href="index.html"><img id="logo" src="image3.png" alt="imagine logo"></a></h1>
+        </header>
+        <main>
+
+        <hr>
+            <form method="post" action="http://localhost:8000/formular" target="iframe"> 
+              
+           <label id="nume">
+               Nume pacient <input type="text" name="nume">
+           </label>	
+               <label id="prenume"> Prenume pacient
+             <input type="text" name="prenume">
+                </label>
+             <br>  
+             <label id="specialitate">Specialitatea
+				<select name="specialitatea">
+					<option value="Cardiologie">Cardiologie</option>
+					<option value="Chirurgie">Chirurgie</option>
+                    <option value="Endocrinologie">Endocrinologie</option>
+                    <option value="Hematologie">Hematologie</option>
+                    <option value="Neurologie">Neurologie</option>
+                    <option value="Oftalmologie">Oftalmologie</option>
+                    <option value="Psihologie">Psihologie</option>
+                    <option value="Radiologie">Radiologie</option>
+				</select>
+			</label>
+            <label id="email">E-mail
+                <input type="email" name="email">
+            </label>
+            <br>
+            <label id="ziua">Ziua
+                <select name="ziua">
+					<option value="luni">Luni</option>
+					<option value="marti">Marti</option>
+                    <option value="miercuri">Miercuri</option>
+                    <option value="joi">Joi</option>
+                    <option value="vineri">Vineri</option>
+                    <option value="sambata">Sambata</option>
+				</select>
+            </label>
+            
+            <label id="ora">Ora
+                <input type="time" name="ora">
+            </label>
+            <br>
+            <label id="submit"> 
+			<input type="submit">        
+            </label>
+            </form>
+            
+        </main>
+        <footer>
+            <section id="contact-footer">
+                <div class="grid-item">
+                    <b>Informatii importante</b>
+                </div>
+                <div id="telefon1">
+                    <span>Fix: 0351 415 401<br>Mobil: 0734 789 645</span>
+                </div>
+                <div id="locatie1">
+                    <span>Adresa: Bulevardul Iuliu Maniu 51, București</span>
+                </div>
+                <div id="email1">
+                    <span>E-mail: office@policlinica.ro</span>
+                </div>
+            </section>
+        </footer>
+    </body>
+</html>
